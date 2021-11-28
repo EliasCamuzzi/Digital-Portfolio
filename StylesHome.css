@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Calibri';
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 5em; /*This function configures the height of the footer*/
+  background: #3D3138;
+}
+
+header {
+  content: '';
+  display: table;
+  width: 100%;
+  clear:both;
+  background: #181316;
+}
+
+nav {
+  float: right;
+}
+
+nav ul li {
+  float: left;
+  margin-left: 175px;
+  position: relative;
+  padding: 50px 0;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 130%;
+  color: #E6E6E6;
+}
+
+nav ul li a::before {
+  display: block;
+  top: 0;
+  height: 5px;
+  width: 0%;
+  content: '';
+  position: absolute;
+  transition: width 0.5s;
+  background: #E6E6E6;
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+}
+
+.Main_Menu {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+}
+
+.Text_Container {
+  position: absolute;
+  text-align: center;
+  font-family: 'Times New Roman', cursive;
+  font-size: 1000%;
+  left: 50%;
+  transform: translateX(-50%) translateY(130%);
+  color: #E6E6E6;
+}
+
+.animate__animated.animate__backInUp {
+  --animate-duration: 2s;
+}
+
+.Letter_Footer {
+  position: absolute;
+  text-align: center;
+  font-family: 'Times New Roman', cursive;
+  font-size: 100%;
+  width: 100%;
+  padding: 1em 0; /*This function configures the height of the footer*/
+  bottom: 0;
+  color: #E6E6E6;
+}
+
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}

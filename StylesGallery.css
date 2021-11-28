@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Calibri';
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 5em; /*This function configures the height of the footer*/
+  background: #3D3138;
+}
+
+header {
+  content: '';
+  display: table;
+  width: 100%;
+  clear:both;
+  background: #181316;
+}
+
+nav {
+  float: right;
+}
+
+nav ul li {
+  float: left;
+  margin-left: 175px;
+  position: relative;
+  padding: 50px 0;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 130%;
+  color: #E6E6E6;
+}
+
+nav ul li a::before {
+  display: block;
+  top: 0;
+  height: 5px;
+  width: 0%;
+  content: '';
+  position: absolute;
+  transition: width 0.5s;
+  background: #E6E6E6;
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+}
+
+.Main_Menu {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 3s;
+}
+
+.Column_N°1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.Column_N°2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Image_N°5:hover {
+  transform: scale(115%);
+  transition: 0.2s linear;
+}
+
+.Image_N°4:hover {
+  transform: scale(115%);
+  transition: 0.2s linear;
+}
+
+.Image_N°3:hover {
+  transform: scale(115%);
+  transition: 0.2s linear;
+}
+
+.Image_N°2:hover {
+  transform: scale(115%);
+  transition: 0.2s linear;
+}
+
+.Image_N°1:hover {
+  transform: scale(115%);
+  transition: 0.2s linear;
+}
+
+.Letter_Footer {
+  position: absolute;
+  text-align: center;
+  font-family: 'Times New Roman', cursive;
+  font-size: 100%;
+  width: 100%;
+  padding: 1em 0; /*This function configures the height of the footer*/
+  bottom: 0;
+  color: #E6E6E6;
+}
+
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
